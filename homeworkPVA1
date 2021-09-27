@@ -75,6 +75,61 @@ public class Floating {
 }
 
 
+// ***************************************
+// Aufgabe PP 2.4
+// ***************************************
+
+import java.util.Scanner;
+
+public class Persinfo1 {
+    public static void main(String[] args) {
+        String name = "", college = "", petName = "";
+        int age = 0;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Your name: ");
+        name = scan.nextLine();
+        System.out.println("Your Age: ");
+        age = scan.nextInt();
+        System.out.println("Your College: ");
+        college = scan.nextLine();
+        System.out.println("Your Pet-Name: ");
+        petName = scan.nextLine();
+
+        System.out.println("Hello my name is " + name + " and I am " + age + " years\nold. I'm enjoying my time at " + college + ", through\nI miss" +
+                " my pet " + petName + " very much!");
+    }
+}
+
+
+
+// ***************************************
+// Aufgabe PP 2.7
+// ***************************************
+
+import java.util.Scanner;
+
+public class Speed {
+    public static void main(String[] args) {
+        int speed = 0, dist = 0;
+        float time = 0f;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Speed: ");
+        speed = scan.nextInt();
+        System.out.println("Time: ");
+        dist = scan.nextInt();
+
+        time = speed * dist;
+
+        System.out.println("Needed time: " + time + " h");
+    }
+}
+
+
+
+
+
 
 
 
