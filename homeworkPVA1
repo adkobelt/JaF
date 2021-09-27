@@ -44,6 +44,36 @@ public class Average {
 }
 
 
+// ***************************************
+// Aufgabe PP 2.3
+// ***************************************
+
+import java.util.Scanner;
+
+public class Floating {
+    public static void main(String[] args) {
+        float nr1, nr2, sum, diff, prod;
+        nr1 = 0;
+        nr2 = 0;
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Calculation of sum, difference and product of 2 float-numbers.");
+        System.out.println("First float Number");
+        nr1 = scan.nextFloat();
+        System.out.println("Second float Number");
+        nr2 = scan.nextFloat();
+
+        sum = nr1 + nr2;
+        diff = nr1 - nr2;
+        prod = nr1 * nr2;
+
+        //System.out.println("Sum: " + (nr1 + nr2));
+        System.out.println("Sum: " + sum);
+        System.out.println("Diff: " + diff);
+        System.out.println("Product: " + prod);
+    }
+}
+
 
 
 
