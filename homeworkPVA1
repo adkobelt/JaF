@@ -1,0 +1,52 @@
+// ***************************************
+// Aufgabe PP 1.1
+// ***************************************
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("An Emergency Broadcast");
+    }
+}
+
+
+// ***************************************
+// Aufgabe PP 1.3
+// ***************************************
+
+public class Persinfo {
+    public static void main(String[] args) {
+        System.out.println("Adriano Kobelt");
+        System.out.println("3. Februar");
+        System.out.println("Wandern, Coding");
+    }
+}
+
+
+// ***************************************
+// Aufgabe PP 2.2
+// ***************************************
+
+import java.util.Scanner;
+
+public class Average {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Calculation average of three integers.");
+        System.out.println("First Number: ");
+        sum += scan.nextInt();
+        System.out.println("Second Number: ");
+        sum += scan.nextInt();
+        System.out.println("Third Number: ");
+        sum += scan.nextInt();
+        System.out.println("The average is: " + sum / 3);
+    }
+}
+
+
+
+
+
+
+
+
