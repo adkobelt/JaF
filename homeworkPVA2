@@ -10,7 +10,7 @@ public class Accountname {
         Scanner scan = new Scanner(System.in);
         Random generator = new Random();
 
-        String fname = "", lname = "";
+        String fname, lname;
         int nracc = generator.nextInt(99) + 10;
 
         System.out.println("Your Firstname: ");
@@ -56,8 +56,8 @@ import java.util.Scanner;
 
 public class Rounding {
     public static void main(String[] args) {
-        double nr = 0.0;
-        int nrdown = 0, nrup = 0;
+        double nr;
+        int nrdown, nrup;
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Your Float Number: ");
