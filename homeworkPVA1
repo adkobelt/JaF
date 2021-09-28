@@ -31,7 +31,7 @@ import java.util.Scanner;
 public class Average {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int sum = 0;
+        int sum;
         System.out.println("Calculation average of three integers.");
         System.out.println("First Number: ");
         sum += scan.nextInt();
@@ -53,8 +53,8 @@ import java.util.Scanner;
 public class Floating {
     public static void main(String[] args) {
         float nr1, nr2, sum, diff, prod;
-        nr1 = 0;
-        nr2 = 0;
+        nr1;
+        nr2;
         
         Scanner scan = new Scanner(System.in);
         System.out.println("Calculation of sum, difference and product of 2 float-numbers.");
@@ -83,8 +83,8 @@ import java.util.Scanner;
 
 public class Persinfo1 {
     public static void main(String[] args) {
-        String name = "", college = "", petName = "";
-        int age = 0;
+        String name, college, petName;
+        int age;
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Your name: ");
@@ -111,8 +111,8 @@ import java.util.Scanner;
 
 public class Speed {
     public static void main(String[] args) {
-        int speed = 0, dist = 0;
-        float time = 0f;
+        int speed, dist;
+        float time;
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Speed: ");
