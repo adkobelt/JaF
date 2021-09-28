@@ -1,0 +1,73 @@
+// ***************************************
+// Aufgabe PP 3.1
+// ***************************************
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Accountname {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Random generator = new Random();
+
+        String fname = "", lname = "";
+        int nracc = generator.nextInt(99) + 10;
+
+        System.out.println("Your Firstname: ");
+        fname = scan.nextLine();
+        System.out.println("Your Lastname: ");
+        lname = scan.nextLine();
+
+        System.out.printf("%.1s%.5s%d", fname, lname, nracc);
+    }
+}
+
+
+// ***************************************
+// Aufgabe PP 3.3
+// ***************************************
+
+import java.util.Random;
+
+public class Password {
+    public static void main(String[] args) {
+        Random generator = new Random();
+
+        int nr1 = generator.nextInt(3) + 7; //random Number 7, 8 or 9
+        int nr2 = generator.nextInt(100) + 10; // random Number in range 10 to 99
+        int nr3 = generator.nextInt(100) + 10; // random Number in range 10 to 99
+        int nr4 = generator.nextInt(100) + 10; // random Number in range 10 to 99
+        int nr5 = generator.nextInt(100) + 10; // random Number in range 10 to 99
+        int nr6 = generator.nextInt(100) + 10; // random Number in range 10 to 99
+        char let1 = (char)(generator.nextInt(26) + 65); // random uppercase letter from A to Z
+        char let2 = (char)(generator.nextInt(26) + 65); // random uppercase letter from A to Z
+        char let3 = (char)(generator.nextInt(26) + 65); // random uppercase letter from A to Z
+
+        System.out.printf("%d%d%d%d%d%d-%s%s%s", nr1, nr2, nr3, nr4, nr5, nr6, let1, let2, let3);
+    }
+}
+
+
+// ***************************************
+// Aufgabe PP 3.4
+// ***************************************
+
+import java.util.Scanner;
+
+public class Rounding {
+    public static void main(String[] args) {
+        double nr = 0.0;
+        int nrdown = 0, nrup = 0;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Your Float Number: ");
+        nr = scan.nextDouble();
+
+        nrdown = (int)Math.floor(nr);
+        nrup = (int)Math.ceil(nr);
+
+        System.out.println(nrdown);
+        System.out.println(nrup);
+    }
+}
+
